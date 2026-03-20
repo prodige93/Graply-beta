@@ -1,5 +1,5 @@
 import express = require("express");
-import cors = require("cors")
+import cors = require("cors");
 
 //Configuration / initialisation du server Express
 const app = express();
