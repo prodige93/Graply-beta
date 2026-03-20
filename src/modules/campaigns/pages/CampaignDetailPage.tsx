@@ -90,7 +90,7 @@ export default function CampaignDetailPage() {
       </div>
     );
   }
-
+  
   return (
     <div className="h-screen text-white flex overflow-hidden" style={{ backgroundColor: '#050404' }}>
       <Sidebar
