@@ -1,3 +1,4 @@
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -6,19 +7,47 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build
 dist
 dist-ssr
-coverage
+build
+backend/dist
+
+# Environment & secrets (Stripe, Supabase, Vite)
+.env
+.env.*
+!.env.example
+
+# Vite / local overrides
 *.local
 
+# Tests & coverage
+coverage
+.nyc_output
+
+# TypeScript / ESLint cache
+*.tsbuildinfo
+.eslintcache
+
+# Supabase CLI (local state)
+supabase/.temp
+supabase/.branches
+
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Legacy / Windows
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-.env
